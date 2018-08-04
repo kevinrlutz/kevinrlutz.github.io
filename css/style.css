@@ -34,6 +34,8 @@
   }
 }
 
+/* End Mobile */
+
 .head {
   width: 100%;
   background-color: #373737;
@@ -43,6 +45,15 @@
   font-family: Ubuntu;
   padding-top: 15px;
   z-index: 2000;
+}
+
+#title-img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 hr {
