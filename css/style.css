@@ -19,8 +19,8 @@
   .port-images {
     text-align: center;
   }
-  h1 {
-    font-size: 3em !important;
+  #name-title {
+    font-size: 2.5em !important;
   }
   h2 {
     font-size: 1.5em !important;
@@ -31,8 +31,8 @@
   }
   .navbox {
     grid-gap: .5em;
-    padding: 1px;
-    width: 27em !important;
+    padding: 8px !important;
+    width: 90vw !important;
     margin-top: 1em;
     border-style: outset;
     background: white;
@@ -40,9 +40,8 @@
 
   .navbox > div > a{
     text-decoration: none;
-    padding-right: 0em;
     border-right: 2px solid #8e8e8e;
-    font-size: .9em;
+    font-size: .91em;
   }
 }
 
