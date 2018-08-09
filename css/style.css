@@ -1,6 +1,6 @@
 /* Mobile */
 
-@media screen and (max-width: 588px) {
+@media screen and (max-width: 650px) {
   p {
     font-size: 1.05em;
   }
@@ -18,9 +18,6 @@
   }
   .port-images {
     text-align: center;
-  }
-  .navbox {
-    display: none !important;
   }
   h1 {
     font-size: 3em !important;
@@ -57,10 +54,11 @@
 }
 
 hr {
-  background-color: #eee;
-  border: 0 none;
-  color: #eee;
-  height: .2em;
+  background-color: #cccdce;
+  border-radius: 70%;
+  border: none;
+  color: #cccdce;
+  height: .125em;
 }
 
 .f {
@@ -167,7 +165,7 @@ a:hover {
 }
 
 a {
-  color: #6D6D6D;
+  color: #8e8e8e;
   text-decoration: underline;
 }
 
@@ -179,6 +177,15 @@ a {
   font-size: 1.2em;
 }
 
+.socials-grid>div>a {
+  color: #38a5ff;
+  text-decoration: none;
+}
+
+.socials-grid>div>a:hover {
+  text-decoration: underline;
+}
+
 .grid-container>div {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid black;
@@ -187,20 +194,20 @@ a {
 }
 
 .navbox {
-  position: fixed;
-  top: .5em;
-  left: .5em;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1em;
+  padding: 10px;
+  width: 28em;
+  margin-top: 1em;
   border-style: outset;
+  background: white;
 }
 
-.navbox>ul {
-  list-style-type: none;
-  margin: 1em;
-  padding-left: .25em;
-}
-
-li a {
+.navbox > div > a{
   text-decoration: none;
+  padding-right: 1em;
+  border-right: 2px solid #8e8e8e;
 }
 
 #body-div {
