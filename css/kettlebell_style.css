@@ -7,7 +7,7 @@ h1 {
 }
 
 p {
-  font-size: 70px;
+  font-size: 5vw;
   font-family: sans-serif;
   color: #ff3d43;
   text-shadow: 2px 2px #8c1c1c;
@@ -17,17 +17,23 @@ p {
   width: 60%;
   background-color: #ff7e7a;
   margin-top: -.2em;
-  margin-bottom: -.25em;
+  margin-bottom: 1vw;
   text-shadow: 2px 2px #8c1c1c;
 }
 
-#repCount {
+#rep-set-grid {
+  display: grid;
+  margin-top: -4vw;
+  grid-template-columns: auto auto;
   width: 60%;
+}
+
+#repCount {
   background-color: #ff7e7a;
+  padding-bottom: .25em;
 }
 
 #setLabel {
-  width: 60%;
   background-color: #ff7e7a;
 }
 
@@ -40,6 +46,7 @@ button {
   width: 5em;
   background-color: #ff3d43;
   color: #8c1c1c;
+  margin-top: -1em;
 }
 
 form {

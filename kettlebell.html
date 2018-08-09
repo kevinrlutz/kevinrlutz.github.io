@@ -10,18 +10,19 @@
 <body>
 	<center>
 		<h1 style="font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif'">Kettlebell Timer by Kevin Lutz</h1>
-		<p id="timeLabel" style="font-size: 90px">0:00</p>
-		<p id="repCount" style="margin-top: 20px">Rep Count: 0</p>
-		<p id="setLabel" style="margin-top: -70px">Sets Left: 0</p>
+		<br>
+		<p id="timeLabel" style="font-size: 150px">0:00</p>
+		<div id="rep-set-grid">
+		<p id="repCount">Rep Count: 0</p>
+		<p id="setLabel">Sets Left: 0</p>
+	</div>
 		<br>
 		<button onclick="startBeeps()" style="margin-right: .3em">START</button>
 		<button onclick="resetBeeps()">STOP</button>
 		<br>
 		<p style="font-size: 1.2em; text-shadow: none; color: white">If number of sets left blank, defaults to 1 set</p>
 		<form>
-			Number of sets: <input type="number" id="goalSets"><br>
-			Reps per set: <input type="number" id="goalReps"><br>
-			Time per set in minutes: <input type="number" id="goalTime"><br>
+			Number of sets: <input type="number" id="goalSets"><br> Reps per set: <input type="number" id="goalReps"><br> Time per set in minutes: <input type="number" id="goalTime"><br>
 		</form>
 	</center>
 	<script>
