@@ -44,9 +44,11 @@ button {
   padding: .75em;
   line-height: 2.75em;
   width: 5em;
-  background-color: #ff3d43;
+  background: #ff3d43;
+  background: linear-gradient(#ff5156, #ff3d43);
   color: #8c1c1c;
   margin-top: -1em;
+  box-shadow: 0px 3px #963333;
 }
 
 button:focus {
