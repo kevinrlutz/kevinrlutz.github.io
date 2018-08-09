@@ -49,6 +49,10 @@ button {
   margin-top: -1em;
 }
 
+button:focus {
+  outline: none;
+}
+
 form {
   font-size: 2em;
   font-family: sans-serif;

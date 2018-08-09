@@ -13,9 +13,9 @@
 		<br>
 		<p id="timeLabel" style="font-size: 150px">0:00</p>
 		<div id="rep-set-grid">
-		<p id="repCount">Rep Count: 0</p>
-		<p id="setLabel">Sets Left: 0</p>
-	</div>
+			<p id="repCount">Rep Count: 0</p>
+			<p id="setLabel">Sets Left: 0</p>
+		</div>
 		<br>
 		<button onclick="startBeeps()" style="margin-right: .3em">START</button>
 		<button onclick="resetBeeps()">STOP</button>
@@ -54,7 +54,8 @@
 				startCount();
 
 				function startCount() {
-
+					var setInSeconds = (parseFloat(document.getElementById("goalTime").valueAsNumber) * 60);
+					var rps = parseFloat(document.getElementById("goalReps").valueAsNumber);
 					document.getElementById("timeLabel").innerHTML = "0:00";
 					minutesLeft = Math.floor(countdownTime / 60);
 					secondsLeft = countdownTime - (minutesLeft * 60);
@@ -66,17 +67,28 @@
 						if (secondsLeft == 0 && minutesLeft == 0) {
 							if (setsLeft == 0) {
 								audio.play();
-								document.getElementById("repCount").innerHTML = "Rep Count: " + count++;
+								if(setInSeconds % rps != 0){
+									document.getElementById("repCount").innerHTML = "Rep Count: " + (count-1);
+								}else{
+									document.getElementById("repCount").innerHTML = "Rep Count: " + count++;
+							  }
 								stopBeeps();
 							} else {
 								setsLeft--;
+								if(setInSeconds % rps != 0){
+									document.getElementById("repCount").innerHTML = "Rep Count: " + (count-1);
+								}else{
+									document.getElementById("repCount").innerHTML = "Rep Count: " + count;
+							  }
 								document.getElementById("setLabel").innerHTML = "Sets Left: " + (setsLeft);
 								audio.play();
-								document.getElementById("repCount").innerHTML = "Rep Count: " + count;
 								clearInterval(repCounter);
 								clearInterval(secondCountdown);
-								countdownTime = (60 * (parseFloat(document.getElementById("goalTime").value)))
+								countdownTime = (60 * (parseFloat(document.getElementById("goalTime").value)));
 								count++;
+								if(setInSeconds % rps != 0){
+									count--;
+								}
 								startCount();
 							}
 						}
