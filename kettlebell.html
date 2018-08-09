@@ -4,28 +4,26 @@
 <head>
 	<meta charset="utf-8">
 	<title>Kettlebell Timer</title>
-	<style>
-		p {
-			font-size: 70px;
-		}
-	</style>
+	<link rel="stylesheet" href="css/kettlebell_style.css">
 </head>
 
 <body>
 	<center>
-		<h1 style="font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif'">Kettlebell Timer</h1>
-		<p style="font-size: 16px">If number of sets left blank, defaults to 1 set</p>
-		<form>
-			Number of sets: <input type="number" id="goalSets"><br> Reps per set: <input type="number" id="goalReps"><br> Time per set in minutes: <input type="number" id="goalTime"><br>
-		</form>
-		<br>
-		<button onclick="startBeeps()">Start</button>
-		<button onclick="resetBeeps()">Stop</button>
+		<h1 style="font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana,' sans-serif'">Kettlebell Timer by Kevin Lutz</h1>
+		<p id="timeLabel" style="font-size: 90px">0:00</p>
 		<p id="repCount" style="margin-top: 20px">Rep Count: 0</p>
-		<p id="timeLabel" style="font-size: 90px; margin-top: -50px">0:00</p>
 		<p id="setLabel" style="margin-top: -70px">Sets Left: 0</p>
+		<br>
+		<button onclick="startBeeps()" style="margin-right: .3em">START</button>
+		<button onclick="resetBeeps()">STOP</button>
+		<br>
+		<p style="font-size: 22px; text-shadow: none; color: white">If number of sets left blank, defaults to 1 set</p>
+		<form>
+			Number of sets: <input type="number" id="goalSets"><br>
+			Reps per set: <input type="number" id="goalReps"><br>
+			Time per set in minutes: <input type="number" id="goalTime"><br>
+		</form>
 	</center>
-
 	<script>
 		var audio = new Audio('beep.wav');
 		var count = 1;

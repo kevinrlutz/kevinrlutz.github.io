@@ -1,0 +1,65 @@
+body {
+  background-color: #FF6262;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  font-size: 70px;
+  font-family: sans-serif;
+  color: #ff3d43;
+  text-shadow: 2px 2px #8c1c1c;
+}
+
+#timeLabel {
+  width: 60%;
+  background-color: #ff7e7a;
+  margin-top: -.2em;
+  margin-bottom: -.25em;
+  text-shadow: 2px 2px #8c1c1c;
+}
+
+#repCount {
+  width: 60%;
+  background-color: #ff7e7a;
+}
+
+#setLabel {
+  width: 60%;
+  background-color: #ff7e7a;
+}
+
+button {
+  font-size: 3em;
+  border: solid #ff7e7a;
+  border-radius: 50%;
+  padding: .75em;
+  line-height: 2.75em;
+  width: 5em;
+  background-color: #ff3d43;
+  color: #8c1c1c;
+}
+
+form {
+  font-size: 2em;
+  font-family: sans-serif;
+  display: inline-block;
+  text-align: left;
+}
+
+form > input {
+  background-color: white;
+  height: 1em;
+  width: 4em;
+  font-size: .9em;
+}
+
+#goalSets {
+  margin-left: 4em;
+}
+
+#goalReps {
+  margin-left: 5.21em;
+}
