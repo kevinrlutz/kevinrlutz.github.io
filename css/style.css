@@ -69,6 +69,12 @@
   z-index: 2000;
 }
 
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 #title-img {
   user-drag: none;
   user-select: none;
@@ -256,6 +262,8 @@ a {
   margin-top: 1em;
   border-style: outset;
   background: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbox>div>a {
