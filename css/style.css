@@ -1,33 +1,14 @@
 /* Mobile */
 
 @media screen and (max-width: 480px) {
-  p {
-    font-size: 1.05em;
-  }
-  #body-div {
-    margin-left: 4% !important;
-    margin-right: 4% !important;
-  }
-  .img {
-    border: 2px solid black;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  img {
-    width: 155%;
-  }
-  .port-images {
-    text-align: center;
-  }
   #name-title {
     font-size: 2.5em !important;
+    font-family: sans-serif;
+    font-weight: bold;
   }
-  h2 {
-    font-size: 1.5em !important;
-  }
-  .socials-grid {
-    display: block !important;
-    font-size: 1em;
+  #title-and-subtitle-div {
+    background: white;
+    width: 55%;
   }
   .navbox {
     grid-gap: .5em;
@@ -95,6 +76,19 @@
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  width: 10em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+#title-and-subtitle-div {
+  background: white;
+  width: 55%;
+}
+
+#name-title {
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 hr {
@@ -103,6 +97,22 @@ hr {
   border: none;
   color: #cccdce;
   height: .125em;
+}
+
+.progress-bar-percent {
+  float: left;
+  user-select: none;
+}
+
+.progress-bar-titles {
+  float: right;
+  user-select: none;
+}
+
+.progress-bars {
+  background: #31b52f;
+  height: 10px;
+  margin-top: 2em;
 }
 
 .f {
