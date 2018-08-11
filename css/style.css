@@ -100,12 +100,12 @@ hr {
 }
 
 .progress-bar-percent {
-  float: left;
+  float: right;
   user-select: none;
 }
 
 .progress-bar-titles {
-  float: right;
+  float: left;
   user-select: none;
 }
 
