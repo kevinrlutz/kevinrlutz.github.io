@@ -37,8 +37,7 @@
     border-style: outset;
     background: white;
   }
-
-  .navbox > div > a{
+  .navbox>div>a {
     text-decoration: none;
     border-right: 2px solid #8e8e8e;
     font-size: .83em;
@@ -249,7 +248,7 @@ a {
   background: white;
 }
 
-.navbox > div > a{
+.navbox>div>a {
   text-decoration: none;
   padding-right: 1em;
   border-right: 2px solid #8e8e8e;
