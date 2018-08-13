@@ -12,7 +12,7 @@
   }
   .navbox {
     grid-gap: .5em;
-    padding: 8px !important;
+    padding: .5em !important;
     width: 90vw !important;
     margin-top: 1em;
     border-style: outset;
@@ -20,7 +20,7 @@
   }
   .navbox>div>a {
     text-decoration: none;
-    border-right: 2px solid #8e8e8e;
+    border-right: 0.125em solid #8e8e8e;
     font-size: .83em;
   }
 }
@@ -34,9 +34,9 @@
     margin-right: 4% !important;
   }
   .img {
-    border: 2px solid black;
+    border: 0.125em solid black;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
   }
   img {
     width: 155%;
@@ -65,7 +65,7 @@
   top: 0;
   position: fixed;
   font-family: Ubuntu;
-  padding-top: 15px;
+  padding-top: 0.938em;
   z-index: 2000;
 }
 
@@ -121,12 +121,12 @@ hr {
 
 .progress-bars {
   background: #31b52f;
-  height: 10px;
+  height: 0.625em;
   margin-top: 2em;
 }
 
 .img {
-  border: 2px solid black;
+  border: 0.125em solid black;
 }
 
 img {
@@ -145,20 +145,20 @@ img {
   font: menu;
   color: ButtonText;
   display: inline-block;
-  padding: 2px 8px;
+  padding: 0.125em 0.5em;
   background-color: white;
   position: absolute;
-  top: 0px;
+  top: 0em;
 }
 
 h1 {
   user-select: none;
-  font-size: 65px;
+  font-size: 4em;
 }
 
 h2 {
   user-select: none;
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 h3 {
@@ -177,8 +177,8 @@ a {
 .socials-grid {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  padding: 10px;
+  grid-gap: 0.625em;
+  padding: 0.625em;
   font-size: 1.2em;
 }
 
@@ -193,16 +193,16 @@ a {
 
 .grid-container>div {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
+  border: 0.063em solid black;
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875em;
 }
 
 .navbox {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 1em;
-  padding: 10px;
+  padding: 0.625em;
   width: 28em;
   margin-top: 1em;
   border-style: outset;
@@ -214,7 +214,7 @@ a {
 .navbox>div>a {
   text-decoration: none;
   padding-right: 1em;
-  border-right: 2px solid #8e8e8e;
+  border-right: 0.125em solid #8e8e8e;
 }
 
 #body-div {
@@ -226,7 +226,7 @@ a {
   position: relative;
   bottom: 0;
   width: 100%;
-  padding: 16px;
+  padding: 1em;
   background-color: #373737;
   color: white;
   text-align: center;
