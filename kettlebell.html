@@ -36,25 +36,31 @@
 		var minutesLeft, secondsLeft;
 
 		function startBeeps() {
+			// Checks for empty Reps
 			if (document.getElementById("goalReps").value == "" || document.getElementById("goalReps").value == " ") {
 				document.getElementById("repCount").innerHTML = "Please set a goal RPM";
 			} else {
 				document.getElementById("repCount").innerHTML = "Rep Count: 0";
+				// sets time
 				var time = (60 / (parseFloat(parseFloat(document.getElementById("goalReps").value) / document.getElementById("goalTime").value))) * 1000;
 
+				// if # of sets is empty, default to just 1 set
 				if (document.getElementById("goalSets").value == "") {
 					setsLeft = 0;
 				} else {
 					setsLeft = document.getElementById("goalSets").value - 1;
 					document.getElementById("setLabel").innerHTML = "Sets Left: " + (setsLeft);
 				}
+				// total time for current countdown
 				countdownTime = (60 * (parseFloat(document.getElementById("goalTime").value))) - 1;
 				minutesLeft = Math.floor(countdownTime / 60);
 				secondsLeft = countdownTime - (minutesLeft * 60);
 				startCount();
 
 				function startCount() {
+					// Convert time per set into seconds
 					var setInSeconds = (parseFloat(document.getElementById("goalTime").valueAsNumber) * 60);
+					// Set reps per second
 					var rps = parseFloat(document.getElementById("goalReps").valueAsNumber);
 					document.getElementById("timeLabel").innerHTML = "0:00";
 					minutesLeft = Math.floor(countdownTime / 60);
@@ -62,11 +68,13 @@
 
 					document.getElementById("timeLabel").innerHTML = "0:00";
 
+					// handles counting down every second and displaying rep and set counts
 					secondCountdown = setInterval(function() {
 
 						if (secondsLeft == 0 && minutesLeft == 0) {
 							if (setsLeft == 0) {
 								audio.play();
+								// fix for overlapping reps if they include a fractional second part
 								if (setInSeconds % rps != 0) {
 									document.getElementById("repCount").innerHTML = "Rep Count: " + (count - 1);
 								} else {
@@ -75,6 +83,7 @@
 								stopBeeps();
 							} else {
 								setsLeft--;
+								// fix for overlapping reps if they include a fractional second part
 								if (setInSeconds % rps != 0) {
 									document.getElementById("repCount").innerHTML = "Rep Count: " + (count - 1);
 								} else {
@@ -86,6 +95,7 @@
 								clearInterval(secondCountdown);
 								countdownTime = (60 * (parseFloat(document.getElementById("goalTime").value)));
 								count++;
+								// fix for overlapping reps if they include a fractional second part
 								if (setInSeconds % rps != 0) {
 									count--;
 								}
@@ -107,6 +117,7 @@
 						}
 					}, 1000);
 
+					// Counts reps
 					repCounter = setInterval(function() {
 						audio.play();
 						document.getElementById("repCount").innerHTML = "Rep Count: " + count++;
@@ -115,6 +126,7 @@
 			}
 		}
 
+		// Stop function
 		function stopBeeps() {
 			count = 1;
 			countdownTime = document.getElementById("goalTime").value - 1;
@@ -122,6 +134,7 @@
 			clearInterval(secondCountdown);
 		}
 
+		// reset counts to 0 clear all timers and vars
 		function resetBeeps() {
 			count = 1;
 			countdownTime = document.getElementById("goalTime").value - 1;
