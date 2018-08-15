@@ -1,5 +1,3 @@
-/* Mobile */
-
 @media screen and (max-width: 480px) {
   #name-title {
     font-size: 2.5em !important;
@@ -18,7 +16,6 @@
     border-right: 0 !important;
   }
 }
-
 @media screen and (max-width: 650px) {
   p {
     font-size: 1.05em;
@@ -49,9 +46,6 @@
     font-size: 1em;
   }
 }
-
-/* End Mobile */
-
 .head {
   width: 100%;
   background-color: #373737;
@@ -62,17 +56,14 @@
   padding-top: 0.938em;
   z-index: 2000;
 }
-
 body {
   font-family: Verdana;
 }
-
 .centered {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-
 #title-img {
   user-drag: none;
   user-select: none;
@@ -84,17 +75,14 @@ body {
   border-radius: 50%;
   margin-bottom: 1em;
 }
-
 #title-and-subtitle-div {
   background: white;
   width: 55%;
 }
-
 #name-title {
   font-family: sans-serif;
   font-weight: bold;
 }
-
 hr {
   background-color: #cccdce;
   border-radius: 70%;
@@ -102,35 +90,28 @@ hr {
   color: #cccdce;
   height: .125em;
 }
-
 .progress-bar-percent {
   float: right;
   user-select: none;
 }
-
 .progress-bar-titles {
   float: left;
   user-select: none;
 }
-
 .progress-bars {
   background: #31b52f;
   height: 0.625em;
   margin-top: 2em;
 }
-
 .img {
   border: 0.125em solid black;
 }
-
 img {
   width: 35%;
 }
-
 .port-images {
   text-align: center;
 }
-
 .button {
   appearance: button;
   -moz-appearance: button;
@@ -144,30 +125,24 @@ img {
   position: absolute;
   top: 0em;
 }
-
 h1 {
   user-select: none;
   font-size: 4em;
 }
-
 h2 {
   user-select: none;
   font-size: 2.5em;
 }
-
 h3 {
   user-select: none;
 }
-
 a:hover {
   text-decoration: none;
 }
-
 a {
   color: #8e8e8e;
   text-decoration: underline;
 }
-
 .socials-grid {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -175,23 +150,19 @@ a {
   padding: 0.625em;
   font-size: 1.2em;
 }
-
 .socials-grid>div>a {
   color: #38a5ff;
   text-decoration: none;
 }
-
 .socials-grid>div>a:hover {
   text-decoration: underline;
 }
-
 .grid-container>div {
   background-color: rgba(255, 255, 255, 0.8);
   border: 0.063em solid black;
   text-align: center;
   font-size: 1.875em;
 }
-
 .navbox {
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -204,23 +175,19 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-
 .navbox>div>a {
   text-decoration: none;
   padding-right: 1em;
   border-right: 0.125em solid #8e8e8e;
 }
-
 #body-div {
   margin-left: 15%;
   margin-right: 15%;
 }
-
 #contact-div {
   margin-left: 20%;
   margin-right: 20%;
 }
-
 .f {
   position: relative;
   bottom: 0;
@@ -230,9 +197,6 @@ a {
   color: white;
   text-align: center;
 }
-
-/* Begin animation CSS */
-
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
@@ -241,7 +205,6 @@ a {
     opacity: 1;
   }
 }
-
 @-moz-keyframes fadeIn {
   from {
     opacity: 0;
@@ -250,7 +213,6 @@ a {
     opacity: 1;
   }
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -259,7 +221,6 @@ a {
     opacity: 1;
   }
 }
-
 .fade-in {
   opacity: 0;
   /* make things invisible upon start */
@@ -275,11 +236,8 @@ a {
   -moz-animation-duration: 1s;
   animation-duration: 1s;
 }
-
 .fade-in.one {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   animation-delay: 0.1s;
 }
-
-/* End animation CSS */
