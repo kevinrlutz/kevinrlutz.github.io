@@ -26,14 +26,14 @@
 		</form>
 	</center>
 	<script>
-		var audio = new Audio('beep.wav');
-		var count = 1;
-		var stop = 0;
-		var setsLeft;
-		var countdownTime = (document.getElementById("goalTime").value) - 1;
-		var reps;
-		var repCounter, secondCounter, secondCountdown, minuteCountdown;
-		var minutesLeft, secondsLeft;
+		let audio = new Audio('beep.wav');
+		let count = 1;
+		let stop = 0;
+		let setsLeft;
+		let countdownTime = (document.getElementById("goalTime").value) - 1;
+		let reps;
+		let repCounter, secondCounter, secondCountdown, minuteCountdown;
+		let minutesLeft, secondsLeft;
 
 		function startBeeps() {
 			// Checks for empty Reps
@@ -48,7 +48,7 @@
 				if (document.getElementById("goalSets").value == "") {
 					setsLeft = 0;
 				} else {
-					setsLeft = document.getElementById("goalSets").value - 1;
+				  setsLeft = document.getElementById("goalSets").value - 1;
 					document.getElementById("setLabel").innerHTML = "Sets Left: " + (setsLeft);
 				}
 				// total time for current countdown
@@ -134,7 +134,7 @@
 			clearInterval(secondCountdown);
 		}
 
-		// reset counts to 0 clear all timers and vars
+		// reset counts to 0 clear all timers and variables
 		function resetBeeps() {
 			count = 1;
 			countdownTime = document.getElementById("goalTime").value - 1;
