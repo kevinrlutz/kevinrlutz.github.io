@@ -71,7 +71,7 @@ body {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  width: 10em;
+  width: 10.5em;
   border-radius: 50%;
   margin-bottom: 1em;
 }
@@ -105,6 +105,10 @@ hr {
 }
 .img {
   border: 0.125em solid black;
+  opacity: 0.9;
+}
+.img:hover {
+  opacity: 1.0;
 }
 img {
   width: 35%;
