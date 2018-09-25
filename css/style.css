@@ -90,6 +90,13 @@ hr {
   color: #cccdce;
   height: .125em;
 }
+.skill-imgs {
+  width: 100px;
+}
+.skill-imgs-smaller {
+  width: 70px;
+}
+
 .progress-bar-percent {
   float: right;
   user-select: none;
