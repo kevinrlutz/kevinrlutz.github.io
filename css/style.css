@@ -2,7 +2,7 @@
   #name-title {
     font-size: 2.5em !important;
   }
-  .navbox {
+  nav {
     grid-gap: .5em;
     padding: .5em !important;
     width: 90vw !important;
@@ -10,7 +10,7 @@
     border-style: outset;
     background: white;
   }
-  .navbox>div>a {
+  nav>div>a {
     text-decoration: none;
     font-size: .83em;
     border-right: 0 !important;
@@ -20,7 +20,7 @@
   p {
     font-size: 1.05em;
   }
-  #body-div {
+  main {
     margin-left: 4% !important;
     margin-right: 4% !important;
   }
@@ -59,6 +59,11 @@
 body {
   font-family: Verdana;
 }
+header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 .centered {
   margin-left: auto;
   margin-right: auto;
@@ -96,7 +101,6 @@ hr {
 .skill-imgs-smaller {
   width: 70px;
 }
-
 .progress-bar-percent {
   float: right;
   user-select: none;
@@ -174,7 +178,7 @@ a {
   text-align: center;
   font-size: 1.875em;
 }
-.navbox {
+nav {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 1em;
@@ -186,12 +190,12 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.navbox>div>a {
+nav>div>a {
   text-decoration: none;
   padding-right: 1em;
   border-right: 0.125em solid #8e8e8e;
 }
-#body-div {
+main {
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -199,14 +203,11 @@ a {
   margin-left: 20%;
   margin-right: 20%;
 }
-.f {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  padding: 1em;
-  background-color: #373737;
-  color: white;
+footer {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  font-size: 1em;
 }
 @-webkit-keyframes fadeIn {
   from {
