@@ -127,6 +127,9 @@ img {
 .port-images {
   text-align: center;
 }
+.port-images img {
+  margin-bottom: 5px;
+}
 .button {
   appearance: button;
   -moz-appearance: button;
@@ -156,7 +159,8 @@ a:hover {
 }
 a {
   color: #8e8e8e;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px dashed;
 }
 .socials-grid {
   display: grid;
@@ -168,6 +172,7 @@ a {
 .socials-grid>div>a {
   color: #38a5ff;
   text-decoration: none;
+  border-bottom: none;
 }
 .socials-grid>div>a:hover {
   text-decoration: underline;
@@ -194,6 +199,7 @@ nav>div>a {
   text-decoration: none;
   padding-right: 1em;
   border-right: 0.125em solid #8e8e8e;
+  border-bottom: none;
 }
 main {
   margin-left: 15%;
