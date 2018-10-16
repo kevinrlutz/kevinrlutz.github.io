@@ -3,17 +3,12 @@
     font-size: 2.5em !important;
   }
   nav {
-    grid-gap: .5em;
-    padding: .5em !important;
-    width: 90vw !important;
     margin-top: 1em;
-    border-style: outset;
     background: white;
   }
-  nav>div>a {
+  nav>a {
     text-decoration: none;
-    font-size: .83em;
-    border-right: 0 !important;
+    font-size: 1em !important;
   }
 }
 @media screen and (max-width: 650px) {
@@ -59,6 +54,9 @@
 body {
   font-family: Verdana;
 }
+p {
+  color: #5b5b5b;
+}
 header {
   margin-left: auto;
   margin-right: auto;
@@ -76,9 +74,10 @@ header {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  width: 10.5em;
+  width: 13em;
   border-radius: 50%;
   margin-bottom: 1em;
+  border: solid black 4px;
 }
 #title-and-subtitle-div {
   background: white;
@@ -87,6 +86,7 @@ header {
 #name-title {
   font-family: sans-serif;
   font-weight: bold;
+  color: gray;
 }
 hr {
   background-color: #cccdce;
@@ -110,7 +110,7 @@ hr {
   user-select: none;
 }
 .progress-bars {
-  background: #31b52f;
+  background: #fc3f3f;
   height: 0.625em;
   margin-top: 2em;
 }
@@ -156,9 +156,10 @@ h3 {
 }
 a:hover {
   text-decoration: none;
+  color: #8e8e8e;
 }
 a {
-  color: #8e8e8e;
+  color: red;
   text-decoration: none;
   border-bottom: 1px dashed;
 }
@@ -168,9 +169,10 @@ a {
   grid-gap: 0.625em;
   padding: 0.625em;
   font-size: 1.2em;
+  text-align: center;
 }
 .socials-grid>div>a {
-  color: #38a5ff;
+  color: red;
   text-decoration: none;
   border-bottom: none;
 }
@@ -184,22 +186,22 @@ a {
   font-size: 1.875em;
 }
 nav {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 1em;
-  padding: 0.625em;
-  width: 28em;
   margin-top: 1em;
-  border-style: outset;
   background: white;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-nav>div>a {
+nav>a {
   text-decoration: none;
-  padding-right: 1em;
-  border-right: 0.125em solid #8e8e8e;
   border-bottom: none;
+  font-size: 1.2em;
+  margin-right: 1em;
+  color: black;
+  font-weight: bold;
+}
+nav>a:hover {
+  color: #b20011;
 }
 main {
   margin-left: 15%;
