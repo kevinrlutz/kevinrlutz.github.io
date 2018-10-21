@@ -9,7 +9,7 @@
   z-index: 2000;
 }
 body {
-  font-family: Verdana;
+  font-family: Verdana, sans-serif;
 }
 p {
   color: #5b5b5b;
@@ -27,14 +27,10 @@ header {
 #title-img {
   user-drag: none;
   user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   width: 13em;
   border-radius: 50%;
   margin-bottom: 1em;
-  border: solid black 4px;
+  border: double 8px black;
 }
 #title-and-subtitle-div {
   background: white;
@@ -46,7 +42,7 @@ header {
 #name-title {
   font-family: sans-serif;
   font-weight: bold;
-  color: gray;
+  color: #3d3d3d;
 }
 hr {
   background-color: #cccdce;
@@ -116,7 +112,7 @@ h3 {
 }
 a:hover {
   text-decoration: none;
-  color: #8e8e8e;
+  color: #b20011;
 }
 a {
   color: red;
