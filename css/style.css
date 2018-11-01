@@ -30,7 +30,7 @@ header {
   width: 13em;
   border-radius: 50%;
   margin-bottom: 1em;
-  border: double 8px black;
+  border: double 0.5em black;
 }
 #title-and-subtitle-div {
   background: white;
@@ -52,10 +52,10 @@ hr {
   height: .125em;
 }
 .skill-imgs {
-  width: 100px;
+  width: 6.6em;
 }
 .skill-imgs-smaller {
-  width: 70px;
+  width: 4.6em;
 }
 .progress-bar-percent {
   float: right;
@@ -84,7 +84,7 @@ img {
   text-align: center;
 }
 .port-images img {
-  margin-bottom: 5px;
+  margin-bottom: 0.3em;
 }
 .button {
   appearance: button;
@@ -117,7 +117,7 @@ a:hover {
 a {
   color: red;
   text-decoration: none;
-  border-bottom: 1px dashed;
+  border-bottom: 0.083em dashed;
 }
 .socials-grid {
   display: grid;
@@ -222,18 +222,6 @@ footer {
 /* END ANIMATION */
 
 /* MOBILE */
-@media screen and (max-width: 480px) {
-  #name-title {
-    font-size: 3em !important;
-  }
-  nav {
-    margin-top: 1em;
-  }
-  nav>a {
-    text-decoration: none;
-    font-size: 1em;
-  }
-}
 @media screen and (max-width: 650px) {
   p {
     font-size: 1.05em;
@@ -253,6 +241,12 @@ footer {
   .port-images {
     text-align: center;
   }
+  .skill-imgs {
+    width: 3.9em;
+  }
+  .skill-imgs-smaller {
+    width: 2.9em;
+  }
   h1 {
     font-size: 3em !important;
   }
@@ -264,6 +258,18 @@ footer {
   }
   .socials-grid {
     display: block !important;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 480px) {
+  #name-title {
+    font-size: 3em !important;
+  }
+  nav {
+    margin-top: 1em;
+  }
+  nav>a {
+    text-decoration: none;
     font-size: 1em;
   }
 }
