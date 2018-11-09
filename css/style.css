@@ -1,18 +1,8 @@
-.head {
-  width: 100%;
-  background-color: #373737;
-  color: white;
-  top: 0;
-  position: fixed;
-  font-family: Ubuntu;
-  padding-top: 0.938em;
-  z-index: 2000;
-}
 body {
   font-family: Verdana, sans-serif;
 }
 p {
-  color: #5b5b5b;
+  color: #505050;
 }
 header {
   margin-left: auto;
@@ -29,7 +19,7 @@ header {
   width: 13em;
   border-radius: 50%;
   margin-bottom: 1em;
-  border: double 0.5em black;
+  border: double 0.5em #3d3d3d;
 }
 #title-and-subtitle-div {
   background: white;
@@ -69,7 +59,7 @@ hr {
   margin-top: 2em;
 }
 .img {
-  border: 0.125em solid black;
+  border: 0.125em solid #3d3d3d;
   opacity: 0.9;
 }
 .img:hover {
@@ -94,6 +84,7 @@ h2 {
 }
 h3 {
   user-select: none;
+  color: #3d3d3d;
 }
 a:hover {
   text-decoration: none;
@@ -102,7 +93,6 @@ a:hover {
 a {
   color: red;
   text-decoration: none;
-  border-bottom: 0.083em dashed;
 }
 .socials-grid {
   display: grid;
@@ -112,19 +102,14 @@ a {
   font-size: 1.2em;
   text-align: center;
 }
-.socials-grid>div>a {
+.socials-grid div a {
   color: red;
   text-decoration: none;
   border-bottom: none;
 }
-.socials-grid>div>a:hover {
-  text-decoration: underline;
-}
-.grid-container>div {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 0.063em solid black;
-  text-align: center;
-  font-size: 1.875em;
+.socials-grid div a:hover {
+  text-decoration: none;
+  color: #b20011;
 }
 nav {
   margin-top: 1em;
@@ -133,15 +118,15 @@ nav {
   margin-left: auto;
   margin-right: auto;
 }
-nav>a {
+nav a {
   text-decoration: none;
   border-bottom: none;
   font-size: 1.2em;
-  margin-right: 1em;
-  color: black;
+  margin-right: 1.5em;
+  color: #3d3d3d;
   font-weight: bold;
 }
-nav>a:hover {
+nav a:hover {
   color: #b20011;
 }
 main {
@@ -226,9 +211,10 @@ footer {
   nav {
     margin-top: 1em;
   }
-  nav>a {
+  nav a {
     text-decoration: none;
     font-size: 1em;
+    margin-right: 1em;
   }
 }
 /* END MOBILE */
