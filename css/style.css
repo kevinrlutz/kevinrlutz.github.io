@@ -168,6 +168,7 @@ footer {
 @media screen and (max-width: 650px) {
   p {
     font-size: 1.05em;
+    text-align: justify;
   }
   main {
     margin-left: 4% !important;
