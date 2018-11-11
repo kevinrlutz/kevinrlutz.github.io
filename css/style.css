@@ -168,6 +168,8 @@ footer {
 @media screen and (max-width: 650px) {
   p {
     font-size: 1.05em;
+  }
+  #about-text {
     text-align: justify;
   }
   main {
