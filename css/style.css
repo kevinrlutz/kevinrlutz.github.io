@@ -170,7 +170,7 @@ footer {
     font-size: 1.05em;
   }
   #about-text {
-    text-align: justify;
+    text-align: left;
   }
   main {
     margin-left: 4% !important;
