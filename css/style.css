@@ -144,6 +144,10 @@ footer {
   margin-bottom: 3em;
 }
 
+#hidden-projects {
+  display: none;
+}
+
 /* FADE-IN ANIMATION */
 @keyframes fadeIn {
   from {

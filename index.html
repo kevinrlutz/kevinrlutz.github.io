@@ -12,6 +12,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
+<script>
+  function showMore() {
+    let showButton = document.getElementById("showMore");
+    if (showButton.innerHTML == "Show More") {
+      document.getElementById("hidden-projects").style.display = "block";
+      showButton.innerHTML = "Show Less";
+    }
+    else {
+      document.getElementById("hidden-projects").style.display = "none";
+      showButton.innerHTML = "Show More";
+    }
+  }
+</script>
+
 <body class="fade-in one">
   <nav>
     <a href="#about">ABOUT ME</a>&nbsp;<a href="#skills">MY SKILLS</a>&nbsp;<a href="#mywork">MY WORK</a>&nbsp;<a href="#contact" style="margin-right: 0;">CONTACT ME</a>
@@ -109,14 +123,19 @@
       <p>Basic calculator made using JavaScript. Scales to fit the screen, even mobile.</p>
       <a href="http://rjlhomeimprovements.atwebpages.com/"><h3>Construction Company Website Mock-up Website</h3></a>
       <p>Website mock-up I made for my father's contracting company.</p>
-      <a href="http://www.mediafire.com/file/3iqkzxwq5yb52pv/simple_challenges.zip"><h3>Simple Puzzle Challenge Game</h3></a>
-      <p>Game me and a friend are making using the Unity game engine. Complete simple puzzles and movemement-based challenges. Similar to the Portal series.</p>
-      <a href="projects/kettlebell-timer/kettlebell.html"><h3>Kettlebell Workout Timer</h3></a>
-      <p>Kettlebell exercise timing app made with JavaScript. My mother needed an app to help track her kettlebell workouts, so I created this to fit her specifications.</p>
-      <a href="http://www.mediafire.com/file/fq0bnl5bk4j88k7/CSGO_Map_Veto_by_Kevin_Lutz.zip"><h3>CSGO Map Veto App</h3></a>
-      <p>Easy-to-use map vetoing app for the game Counter-Strike: Global Offensive. Used to determine which map will be played in a competitive game. Made in C#.</p>
-      <a href="https://codepen.io/kevinlutz/full/yzKveX"><h3>Buddy Rich Tribute Page</h3></a>
-      <p>Tribute page to drummer Buddy Rich. Made as a requirement for my Responsive Web Design Certification from freeCodeCamp.</p>
+      <div id="hidden-projects">
+        <a href="http://www.mediafire.com/file/3iqkzxwq5yb52pv/simple_challenges.zip"><h3>Simple Puzzle Challenge Game</h3></a>
+        <p>Game me and a friend are making using the Unity game engine. Complete simple puzzles and movemement-based challenges. Similar to the Portal series.</p>
+        <a href="projects/kettlebell-timer/kettlebell.html"><h3>Kettlebell Workout Timer</h3></a>
+        <p>Kettlebell exercise timing app made with JavaScript. My mother needed an app to help track her kettlebell workouts, so I created this to fit her specifications.</p>
+        <a href="http://www.mediafire.com/file/fq0bnl5bk4j88k7/CSGO_Map_Veto_by_Kevin_Lutz.zip"><h3>CSGO Map Veto App</h3></a>
+        <p>Easy-to-use map vetoing app for the game Counter-Strike: Global Offensive. Used to determine which map will be played in a competitive game. Made in C#.</p>
+        <a href="https://codepen.io/kevinlutz/full/yzKveX"><h3>Buddy Rich Tribute Page</h3></a>
+        <p>Tribute page to drummer Buddy Rich. Made as a requirement for my Responsive Web Design Certification from freeCodeCamp.</p>
+      </div>
+      <div class="centered">
+        <button id="showMore" onclick="showMore()">Show More</button>
+      </div>
     </div>
 
     <br />
