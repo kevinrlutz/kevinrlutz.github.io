@@ -58,21 +58,8 @@ hr {
   height: 0.625em;
   margin-top: 2em;
 }
-.img {
-  border: 0.125em solid #3d3d3d;
-  opacity: 0.9;
-}
-.img:hover {
-  opacity: 1.0;
-}
 img {
   width: 35%;
-}
-.port-images {
-  text-align: center;
-}
-.port-images img {
-  margin-bottom: 0.3em;
 }
 h1 {
   user-select: none;
@@ -143,6 +130,19 @@ footer {
   text-align: center;
   font-size: 1em;
 }
+#projects h3 {
+  display: inline;
+  padding-bottom: .1em;
+  color: red;
+  border-bottom: solid red .1em;
+  border-
+  margin-bottom: .75em;
+}
+#projects p {
+  margin-left: 2em;
+  margin-top: .85em;
+  margin-bottom: 3em;
+}
 
 /* FADE-IN ANIMATION */
 @keyframes fadeIn {
@@ -168,6 +168,16 @@ footer {
 @media screen and (max-width: 650px) {
   p {
     font-size: 1.05em;
+  }
+  #projects h3 {
+    font-size: 1.5em;
+    padding-bottom: 0;
+    border-bottom: none;
+    text-decoration: underline;
+  }
+  #projects p {
+    margin-left: 1em;
+    margin-bottom: 1.5em;
   }
   #about-text {
     text-align: left;

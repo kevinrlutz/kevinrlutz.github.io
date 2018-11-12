@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>CoolClothes Brand</title>
+</head>
+
+<script>
+  function noBuy() {
+    var x = document.getElementsByClassName("buy-message");
+    x[0].style.visibility = "visible";
+    x[1].style.visibility = "visible";
+    x[2].style.visibility = "visible";
+  }
+</script>
+
+<body>
+<header>
+  <h1 id="title-h1">CoolClothes</h1>
+  <nav>
+  <a href="#shop">SHOP</a> &nbsp; <a href="#about">ABOUT</a> &nbsp; <a href="#contact" style="margin-right: 0">CONTACT</a>
+  </nav>
+  <hr />
+</header>
+
+<main>
+  <br />
+  <a id="shop"></a>
+  <h2>Shop our clothing line!</h2>
+  <div id="items-list">
+    <img src="images/shirt.png" width="200" height="235"/>
+    <div>
+      <h3>Basic Shirt</h3>
+      <p><strong>$50</strong></p>
+      <p>The basic tee-shirt from CoolClothes. Made with 100% cotton.</p>
+      <form action="javascript:noBuy();">
+        Size: &nbsp; &nbsp;
+          <select name="size">
+          <option value="x-large">XL</option>
+          <option value="large">L</option>
+          <option value="medium">M</option>
+          <option value="small">S</option>
+          <option value="x-small">XS</option>
+        </select>
+        <br />
+        Quantity:
+        <input type="number" name="quantity" min="0" max="5" value="0">
+        <br />
+        <br />
+        <input type="submit" value="BUY NOW">
+        <p class="buy-message">This is just a mock-up site, silly!</p>
+      </form>
+    </div>
+    <img src="images/polo.png" width="200" height="235"/>
+    <div>
+      <h3>Basic Polo</h3>
+      <p><strong>$90</strong></p>
+      <p>The basic polo from CoolClothes. Made with 100% cotton.</p>
+      <form action="javascript:noBuy();">
+        Size: &nbsp; &nbsp;
+          <select name="size">
+          <option value="x-large">XL</option>
+          <option value="large">L</option>
+          <option value="medium">M</option>
+          <option value="small">S</option>
+          <option value="x-small">XS</option>
+        </select>
+        <br />
+        Quantity:
+        <input type="number" name="quantity" min="0" max="5" value="0">
+        <br />
+        <br />
+        <input type="submit" value="BUY NOW">
+        <p class="buy-message">This is just a mock-up site, silly!</p>
+      </form>
+    </div>
+    <img src="images/hoodie.png" width="200" height="235"/>
+    <div>
+      <h3>Basic Hoodie</h3>
+      <p><strong>$140</strong></p>
+      <p>The basic hoodie from CoolClothes. Made with 100% cotton.</p>
+      <form action="javascript:noBuy();">
+        Size: &nbsp; &nbsp;
+          <select name="size">
+          <option value="x-large">XL</option>
+          <option value="large">L</option>
+          <option value="medium">M</option>
+          <option value="small">S</option>
+          <option value="x-small">XS</option>
+        </select>
+        <br />
+        Quantity:
+        <input type="number" name="quantity" min="0" max="5" value="0">
+        <br />
+        <br />
+        <input type="submit" value="BUY NOW">
+        <p class="buy-message">This is just a mock-up site, silly!</p>
+      </form>
+    </div>
+  </div>
+  <br />
+  <a id="about"></a>
+  <h2>Our Legacy</h2>
+  <p>We are a brand new start-up clothes company founded by two guys in college looking to wear
+    nice clothes. CoolClothes is based in New York. All of our clothes are made with 100% cotton (and love <3) </p>
+
+</main>
+
+</body>
+
+</html>

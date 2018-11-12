@@ -1,0 +1,65 @@
+body {
+  font-family: monospace;
+}
+p {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 65%;
+}
+
+header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#title-h1 {
+  font-family: sans-serif;
+  color: red;
+  font-size: 7em;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: black;
+  font-weight: bold;
+  margin-right: 2em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#items-list {
+  margin-left: 25%;
+  margin-right: 25%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 1em;
+  text-align: left;
+}
+
+#items-list div {
+  margin-bottom: 2em;
+}
+
+.buy-message {
+  visibility: hidden;
+  color: red;
+}
