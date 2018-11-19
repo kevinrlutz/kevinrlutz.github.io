@@ -13,20 +13,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<script>
-  function showMore() {
-    let showButton = document.getElementById("showMore");
-    if (showButton.innerHTML == "Show More") {
-      document.getElementById("hidden-projects").style.display = "block";
-      showButton.innerHTML = "Show Less";
-    }
-    else {
-      document.getElementById("hidden-projects").style.display = "none";
-      showButton.innerHTML = "Show More";
-    }
-  }
-</script>
-
 <body class="fade-in one">
   <nav>
     <a href="#about">ABOUT ME</a>&nbsp;<a href="#skills">MY SKILLS</a>&nbsp;<a href="#mywork">MY WORK</a>&nbsp;<a href="#contact" style="margin-right: 0;">CONTACT ME</a>
@@ -160,6 +146,20 @@
     <p style="font-size: .8em; color: #818181">Created by <a href="http://twitter.com/kevinrlutz">Kevin Lutz</a></p>
     <p style="font-size: .8em; color: #818181; margin-top: -1em">&copy; 2018</p>
   </footer>
+
+  <script>
+    function showMore() {
+      let showButton = document.getElementById("showMore");
+      if (showButton.innerHTML == "Show More") {
+        document.getElementById("hidden-projects").style.display = "block";
+        showButton.innerHTML = "Show Less";
+      }
+      else {
+        document.getElementById("hidden-projects").style.display = "none";
+        showButton.innerHTML = "Show More";
+      }
+    }
+  </script>
 
 </body>
 
