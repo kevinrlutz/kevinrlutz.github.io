@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+</head>
+
+<style>
+  #graph {
+    margin-top: 12em;
+  }
+  #bar1 {
+    background-color: yellow;
+  }
+  #bar2 {
+    background-color: red;
+  }
+  #bar3 {
+    background-color: blue;
+  }
+  * {
+    font-family: sans-serif;
+  }
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+  }
+</style>
+
+<body>
+  <h1>Bar Graph Generator</h1>
+    Value 1 <input type="number" id="num1" min="0" max="10"/>&nbsp;<input type="color" name="graphColor" id="color1" value="#ffff00"/><br />
+    Value 2 <input type="number" id="num2" min="0" max="10"/>&nbsp;<input type="color" name="graphColor" id="color2" value="#ff0000"/><br />
+    Value 3 <input type="number" id="num3" min="0" max="10"/>&nbsp;<input type="color" name="graphColor" id="color3" value="#0033cc" /><br />
+    <br />
+    <button id="addOne" onclick="addItem()">Add Item</button>
+    <br />
+    <br />
+    <button type="submit" onclick="graph()">Graph!</button>
+
+
+  <div id="graph">
+    <span id="bar1">Value 1</span> &nbsp; <span id="bar2">Value 2</span> &nbsp; <span id="bar3">Value 3</span>
+  </div>
+
+  <script>
+    function graph() {
+      var bar1 = document.getElementById("bar1");
+      var bar2 = document.getElementById("bar2");
+      var bar3 = document.getElementById("bar3");
+      var val1 = document.getElementById("num1").value;
+      var val2 = document.getElementById("num2").value;
+      var val3 = document.getElementById("num3").value;
+      var color1 = document.getElementById("color1").value;
+      var color2 = document.getElementById("color2").value;
+      var color3 = document.getElementById("color3").value;
+
+      bar1.style.paddingTop = val1 + "em";
+      bar2.style.paddingTop = val2 + "em";
+      bar3.style.paddingTop = val3 + "em";
+      bar1.style.backgroundColor = color1;
+      bar2.style.backgroundColor = color2;
+      bar3.style.backgroundColor = color3;
+    }
+    function addItem() {
+      $("#bar1").style.backgroundColor = "yellow";
+    }
+  </script>
+</body>
+
+</html>
