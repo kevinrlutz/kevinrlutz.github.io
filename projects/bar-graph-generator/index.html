@@ -36,9 +36,9 @@
     Value 2 <input type="number" id="num2" min="0" max="10"/>&nbsp;<input type="color" name="graphColor" id="color2" value="#ff0000"/><br />
     Value 3 <input type="number" id="num3" min="0" max="10"/>&nbsp;<input type="color" name="graphColor" id="color3" value="#0033cc" /><br />
     <br />
-    <button id="addOne" onclick="addItem()">Add Item</button>
+    <!-- <button id="addOne" onclick="addItem()">Add Item</button>
     <br />
-    <br />
+    <br /> -->
     <button type="submit" onclick="graph()">Graph!</button>
 
 
@@ -48,25 +48,15 @@
 
   <script>
     function graph() {
-      var bar1 = document.getElementById("bar1");
-      var bar2 = document.getElementById("bar2");
-      var bar3 = document.getElementById("bar3");
-      var val1 = document.getElementById("num1").value;
-      var val2 = document.getElementById("num2").value;
-      var val3 = document.getElementById("num3").value;
-      var color1 = document.getElementById("color1").value;
-      var color2 = document.getElementById("color2").value;
-      var color3 = document.getElementById("color3").value;
-
-      bar1.style.paddingTop = val1 + "em";
-      bar2.style.paddingTop = val2 + "em";
-      bar3.style.paddingTop = val3 + "em";
-      bar1.style.backgroundColor = color1;
-      bar2.style.backgroundColor = color2;
-      bar3.style.backgroundColor = color3;
+      $("#bar1").css("paddingTop", ($("#num1").val() + "em"));
+      $("#bar1").css("backgroundColor", $("#color1").val());
+      $("#bar2").css("paddingTop", ($("#num2").val() + "em"));
+      $("#bar2").css("backgroundColor", $("#color2").val());
+      $("#bar3").css("paddingTop", ($("#num3").val() + "em"));
+      $("#bar3").css("backgroundColor", $("#color3").val());
     }
     function addItem() {
-      $("#bar1").style.backgroundColor = "yellow";
+      $("#color3").after("<p>This feature is not yet available</p>");
     }
   </script>
 </body>

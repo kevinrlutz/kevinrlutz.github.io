@@ -153,14 +153,13 @@
 
   <script>
     function showMore() {
-      let showButton = document.getElementById("showMore");
-      if (showButton.innerHTML == "Show More") {
-        document.getElementById("hidden-projects").style.display = "block";
-        showButton.innerHTML = "Show Less";
+      if ($("#showMore").html() == "Show More") {
+        $("#hidden-projects").css("display", "block");
+        $("#showMore").html("Show Less");
       }
       else {
-        document.getElementById("hidden-projects").style.display = "none";
-        showButton.innerHTML = "Show More";
+        $("#hidden-projects").css("display", "none");
+        $("#showMore").html("Show More");
       }
     }
   </script>
