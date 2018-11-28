@@ -188,6 +188,10 @@ footer {
     margin-left: 0;
     margin-right: 0;
     width: 100%;
+    border-right: 0;
+    border-left: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
   #projects h3 {
     font-size: 1.5em;
