@@ -107,7 +107,7 @@ nav {
   margin-left: 5%;
   margin-right: 5%;
   position: fixed;
-  padding: 1em;
+  padding: .5em;
   border-bottom: 2px solid black;
   border-right: 2px solid black;
   border-left: 2px solid black;
@@ -144,7 +144,6 @@ footer {
   padding-bottom: .1em;
   color: red;
   border-bottom: solid red .1em;
-  border-
   margin-bottom: .75em;
 }
 #projects p {
@@ -190,6 +189,7 @@ footer {
     width: 100%;
     border-right: 0;
     border-left: 0;
+    padding: 1em;
     padding-left: 0;
     padding-right: 0;
   }
