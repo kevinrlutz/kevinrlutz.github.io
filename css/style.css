@@ -16,10 +16,10 @@ header {
 }
 #title-img {
   user-select: none;
-  width: 13em;
+  width: 13.5em;
   border-radius: 50%;
   margin-bottom: 1em;
-  border: double 0.5em #3d3d3d;
+  border: double .5em #3d3d3d;
 }
 #title-and-subtitle-div {
   background: white;
@@ -108,9 +108,9 @@ nav {
   margin-right: 5%;
   position: fixed;
   padding: .5em;
-  border-bottom: 2px solid black;
-  border-right: 2px solid black;
-  border-left: 2px solid black;
+  border-bottom: 2px solid #3d3d3d;
+  border-right: 2px solid #3d3d3d;
+  border-left: 2px solid #3d3d3d;
   width: 90%;
 }
 nav a {
@@ -120,7 +120,7 @@ nav a {
   margin-right: 1.5em;
   color: #3d3d3d;
   font-weight: bold;
-  transition: .5s;
+  transition: .7s;
 }
 nav a:hover {
   color: #b20011;
@@ -151,9 +151,17 @@ footer {
   margin-top: .85em;
   margin-bottom: 3em;
 }
-
+#showMore {
+  border-radius: .1em;
+}
 #hidden-projects {
   display: none;
+}
+textarea {
+  font-size: 12px;
+}
+input[type=submit] {
+  border-radius: 0.1em;
 }
 
 /* FADE-IN ANIMATION */
