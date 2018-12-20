@@ -8,6 +8,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin-top: 4.5em;
 }
 .centered {
   margin-left: auto;
@@ -163,6 +164,33 @@ textarea {
 input[type=submit] {
   border-radius: 0.1em;
 }
+#hamburger-menu {
+  margin-top: 1em;
+  margin-left: 1em;
+  display: none;
+}
+#hamburger-menu div {
+  height: 5px;
+  width: 36px;
+  margin-bottom: 6px;
+  background-color: #3d3d3d;
+}
+#desktop-nav {
+  display: block;
+  top: 0;
+}
+#mobile-nav {
+  display: none;
+  margin-bottom: 2em;
+  position: absolute;
+}
+#mobile-nav a {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+#mobile-nav br {
+  margin-bottom: 1em;
+}
 
 /* FADE-IN ANIMATION */
 @keyframes fadeIn {
@@ -186,6 +214,21 @@ input[type=submit] {
 
 /* MOBILE */
 @media screen and (max-width: 650px) {
+  header {
+    margin-top: 3em;
+  }
+  #hamburger-menu {
+    display: block;
+  }
+  #desktop-nav {
+    display: none;
+  }
+  #mobile-nav {
+    line-height: 1.7;
+  }
+  #mobile-nav a {
+    margin-right: 0;
+  }
   p {
     font-size: 1.05em;
   }

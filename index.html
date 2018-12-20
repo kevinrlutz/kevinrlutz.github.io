@@ -13,14 +13,22 @@
 </head>
 
 <body class="fade-in one">
-  <nav>
+  <nav id="desktop-nav">
     <a href="#about">ABOUT ME</a>&nbsp;<a href="#skills">MY SKILLS</a>&nbsp;<a href="#mywork">MY WORK</a>&nbsp;<a href="#contact" style="margin-right: 0;">CONTACT ME</a>
   </nav>
 
-  <br />
-  <br />
-  <br />
-  <br />
+  <div id="hamburger-menu" onclick="hamburger()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <nav id="mobile-nav">
+    <a href="#about">ABOUT ME</a><br />
+    <a href="#skills">MY SKILLS</a><br />
+    <a href="#mywork">MY WORK</a><br />
+    <a href="#contact">CONTACT ME</a><br />
+  </nav>
 
   <header>
     <img id="title-img" src="https://i.imgur.com/Q55gCEC.jpg" alt="Picture of me">
@@ -162,6 +170,16 @@
   </footer>
 
   <script>
+    function hamburger() {
+      if ($("#mobile-nav").css("display") == "none") {
+        $("#mobile-nav").css("display", "block");
+        $("header").css("margin-top", "11em");
+      }
+      else {
+        $("#mobile-nav").css("display", "none");
+        $("header").css("margin-top", "3em");
+      }
+    }
     function showMore() {
       if ($("#showMore").html() == "Show More") {
         $("#hidden-projects").css("display", "block");
