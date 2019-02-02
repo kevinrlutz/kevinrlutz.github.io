@@ -191,6 +191,18 @@ input[type=submit] {
 #mobile-nav br {
   margin-bottom: 1em;
 }
+.article-meta p {
+  font-size: 0.9em;
+  line-height: 100%;
+}
+h4 {
+  font-size: 1.1em;
+  color: #505050;
+  font-family: sans-serif;
+}
+.blog-more-button {
+  font-size: 0.85em;
+}
 
 /* FADE-IN ANIMATION */
 @keyframes fadeIn {
@@ -282,6 +294,12 @@ input[type=submit] {
   .socials-grid {
     display: block !important;
     font-size: 1em;
+  }
+  h3 {
+    font-size: 1.35em;
+  }
+  h4 {
+    font-size: 1.2em;
   }
 }
 @media screen and (max-width: 480px) {
