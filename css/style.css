@@ -83,6 +83,7 @@ a {
   color: red;
   text-decoration: none;
   transition: .5s;
+  font-weight: bold;
 }
 .socials-grid {
   display: grid;
@@ -97,6 +98,7 @@ a {
   text-decoration: none;
   border-bottom: none;
   transition: .5s;
+  font-weight: normal;
 }
 .socials-grid div a:hover {
   text-decoration: none;
