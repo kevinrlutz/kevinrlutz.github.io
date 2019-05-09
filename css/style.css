@@ -8,6 +8,9 @@ body {
   font-family: 'Amiko-Regular' !important;
   background-color: #232323;
 }
+::selection {
+  background-color: #8c8c8c;
+}
 p {
   color: #7a7a7a;
 }
