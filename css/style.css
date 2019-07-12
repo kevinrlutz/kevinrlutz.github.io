@@ -119,6 +119,7 @@ nav {
   position: fixed;
   padding: .5em;
   width: 85%;
+  background-color: #232323;
 }
 nav a {
   text-decoration: none;
