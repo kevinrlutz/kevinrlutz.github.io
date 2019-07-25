@@ -69,6 +69,7 @@ hr {
   margin-top: 2em;
   margin-bottom: 1em;
 }
+
 img {
   width: 35%;
 }
@@ -281,7 +282,7 @@ h4 {
     margin-right: 4% !important;
   }
   img {
-    width: 155%;
+    width: 100%;
   }
   .skill-imgs {
     width: 3.9em;
@@ -307,6 +308,9 @@ h4 {
   }
   h4 {
     font-size: 1.2em;
+  }
+  #certifications img {
+    margin-bottom: 1em;
   }
 }
 @media screen and (max-width: 480px) {
