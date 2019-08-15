@@ -93,7 +93,7 @@ a:hover {
 a {
   color: #9e9e9e;
   text-decoration: none;
-  transition: .5s;
+  transition: .25s;
   font-weight: bold;
 }
 .socials-grid {
@@ -119,8 +119,7 @@ nav {
   text-align: right;
   position: fixed;
   padding: .5em;
-  width: 85%;
-  background-color: #232323;
+  width: 100%;
 }
 nav a {
   text-decoration: none;
@@ -186,6 +185,7 @@ input[type=submit] {
 #desktop-nav {
   display: block;
   top: 0;
+  background-color: #232323;
 }
 #mobile-nav {
   display: none;
