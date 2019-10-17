@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 5em;
+}
+
+.centered {
+  text-align: center;
+  marign: auto;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+ol li {
+  font-size: 3em;
+}

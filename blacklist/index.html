@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Room 409 Blacklist</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="centered">
+    <h1>The Official 409 Blacklist</h1>
+    <ol>
+      <li>Devin</li>
+      <li>Arianna</li>
+      <li>Kevin</li>
+      <li>Sir Connaught V</li>
+    </ol>
+    <br />
+    <form method="post" onsubmit="emailSignUp()" action="emailSignUp.php">
+      <input id="emailInput" type="email" name="emailInput" placeholder="Enter your email"/>
+      <input type="submit" />
+    </form>
+  </div>
+
+
+</body>
+
+<script>
+  function emailSignUp() {
+    var email = $("#emailInput").val();
+    console.log(email);
+    window.alert(email);
+  }
+</script>
+
+</html>
