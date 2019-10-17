@@ -17,21 +17,12 @@
       <li>Sir Connaught V</li>
     </ol>
     <br />
-    <form method="post" onsubmit="emailSignUp()" action="emailSignUp.php">
-      <input id="emailInput" type="email" name="emailInput" placeholder="Enter your email"/>
-      <input type="submit" />
+    <form action="http://formspree.io/kevinlutz429@gmail.com" method="post">
+      Enter your email to be notified of changes to the blacklist:
+      <input type="email" name="_replyto" />
+      <input type="submit" value="Send" />
     </form>
   </div>
-
-
 </body>
-
-<script>
-  function emailSignUp() {
-    var email = $("#emailInput").val();
-    console.log(email);
-    window.alert(email);
-  }
-</script>
 
 </html>
