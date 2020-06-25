@@ -27,7 +27,7 @@ header {
 }
 #title-img {
   user-select: none;
-  width: 13.5em;
+  width: 15em;
   border-radius: 50%;
   margin-bottom: 1em;
 }
@@ -58,6 +58,15 @@ header {
 }
 #themeSwitch:hover {
   cursor: pointer;
+}
+#about-section {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-width: 20%;
+  margin-left: 10em;
+  text-align: left;
+  column-gap: 10em;
+  margin-right: 5em;
 }
 
 hr {
@@ -251,6 +260,14 @@ h4 {
 }
 /* END ANIMATION */
 /* MOBILE */
+@media screen and (max-width: 1600px) {
+  #about-section {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center !important;
+  }
+}
 @media screen and (max-width: 650px) {
   header {
     margin-top: 3em;
