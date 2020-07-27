@@ -51,7 +51,7 @@ header {
   background: none;
   border: none;
   color: #9e9e9e;
-  margin-right: 15%;
+  margin-right: 10%;
 }
 #themeSwitch:focus {
   outline: none;
@@ -163,12 +163,12 @@ nav a:hover {
   color: #ce2525 !important;
 }
 main {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 #contact-div {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 22%;
+  margin-right: 22%;
 }
 footer {
   margin-left: auto;
