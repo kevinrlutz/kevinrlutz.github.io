@@ -285,8 +285,8 @@ footer {
         margin-left: 0;
         margin-right: 0;
     }
-    main p {
-        text-align: left;
+    .left-align-mobile {
+        text-align: left !important;
     }
 }
 
