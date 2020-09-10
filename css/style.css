@@ -108,6 +108,10 @@ header h1 {
     position: relative;
 }
 
+#splash-text * {
+    color: #004C99;
+}
+
 #splash-portrait {
     margin-bottom: -.2em;
     margin-right: 10%;
