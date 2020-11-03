@@ -71,7 +71,9 @@ header h1 {
     margin-top: .1em;
     margin-left: .5em;
     color: #5fbdfc;
-    font-size: 3em;
+    font-size: 3.5em;
+    font-family: monospace;
+    font-weight: lighter;
 }
 
 #mobile-header-img {
@@ -126,10 +128,16 @@ header h1 {
 
 #skills-logos {
     pointer-events: none;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    column-gap: 3em;
+    row-gap: 1em;
 }
 
 .skill-imgs {
     width: 6.6em;
+    text-align: center;
 }
 
 .skill-imgs-smaller {
@@ -289,6 +297,10 @@ footer {
         margin-left: 12%;
         margin-right: 12%;
     }
+    #skills-logos {
+        column-gap: 1em;
+        row-gap: .5em;
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -304,6 +316,12 @@ footer {
     }
     .left-align-mobile {
         text-align: left !important;
+    }
+    #skills-logos {
+        display: block;
+    }
+    #skills-logos div {
+        display: none;
     }
 }
 
