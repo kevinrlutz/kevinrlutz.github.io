@@ -6,8 +6,9 @@ symbols = "{}[]!?$(),.<>"
 numbers = "0123456789"
 
 all = lower + upper + symbols + numbers
-print(all)
+
 print('-- Password Generator by Kevin Lutz --')
+
 while True:
     password = ''
     length = input('\nEnter a length: ')
