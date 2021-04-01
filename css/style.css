@@ -5,6 +5,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'JackInput';
+    src: url('./fonts/JackInput.woff2') format('woff2'),
+        url('./fonts/JackInput.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -44,7 +53,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     margin-right: 3em;
-    font-size: 1.55em;
+    font-size: 1.7em;
 }
 
 #last-nav {
@@ -73,8 +82,8 @@ header h1 {
     margin-left: .5em;
     color: #5fbdfc;
     font-size: 3.5em;
-    font-family: monospace;
-    font-weight: lighter;
+    font-family: 'JackInput';
+    font-weight: 100;
 }
 
 #mobile-header-img {
