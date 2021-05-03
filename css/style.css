@@ -132,6 +132,7 @@ header h1 {
     margin-right: 10%;
     pointer-events: none;
     float: right;
+    width: 23.05em;
 }
 
 .default-wrapper {
