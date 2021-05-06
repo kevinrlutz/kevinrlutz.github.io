@@ -63,6 +63,10 @@ nav a {
     margin-right: 1em;
 }
 
+#mobile-nav-arrow {
+    display: none;
+}
+
 #mobile-nav a {
     margin-right: 0;
 }
@@ -292,10 +296,15 @@ footer {
     nav a {
         line-height: 1.35em;
     }
-    #mobile-nav {
+    #mobile-nav-arrow {
+        margin-top: .5em;
+        margin-bottom: .25em;
         display: block;
+        color: #5fbdfc;
+        font-size: 1.25em;
+    }
+    #mobile-nav {
         margin-top: 1em;
-        margin-bottom: .5em;
         line-height: 1.7em;
     }
     .default-wrapper {

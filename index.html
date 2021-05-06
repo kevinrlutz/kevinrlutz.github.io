@@ -133,6 +133,7 @@
         <a href="#mywork">MY WORK</a><br />
         <a href="#contact">CONTACT</a>
       </nav>
+      <div id="mobile-nav-arrow" class="centered" onclick="mobileNavToggle()">▼</div>
     </header>
     <main>
       <div id="splash-container">
@@ -405,6 +406,16 @@
         } else {
           $("#hidden-projects").css("display", "none");
           $("#showMore").html("Show More");
+        }
+      }
+
+      function mobileNavToggle() {
+        if ($("#mobile-nav-arrow").html() == "▼") {
+          $("#mobile-nav").slideDown();
+          $("#mobile-nav-arrow").html("▲");
+        } else {
+          $("#mobile-nav").slideUp();
+          $("#mobile-nav-arrow").html("▼");
         }
       }
     </script>
