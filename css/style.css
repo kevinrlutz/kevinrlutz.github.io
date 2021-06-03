@@ -173,30 +173,16 @@ header h1 {
     width: 4.6em;
 }
 
-.progress-bars {
-    background: linear-gradient(#89CEFC, #CCEAFF);
-    height: 0.625em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-radius: 1em;
-}
-
-.progress-bar-titles {
-    margin-bottom: 0;
-    font-weight: bold;
-}
-
-.progress-percent {
-    float: right;
-    margin-top: .75em;
-    margin-bottom: 0;
+#certifications {
+    width: 55%;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1em;
+    row-gap: .5em;
 }
 
 #certifications img {
-    margin-bottom: 2em;
-    margin-right: 1em;
-    margin-left: 1em;
-    width: 25%;
+    width: 100%;
 }
 
 #showMore {
@@ -329,11 +315,8 @@ footer {
         margin-left: 5%;
         margin-right: 5%;
     }
-    .progress-percent {
-        margin-top: -1em;
-    }
-    #certifications img {
-        width: 100%;
+    #certifications {
+        width: 90%;
     }
     #contact-div {
         margin-left: 12%;
@@ -346,6 +329,11 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
+    #certifications {
+        width: 100%;
+        column-gap: .25em;
+        row-gap: .15em;
+    }
     .skill-imgs {
         width: 3.9em;
     }
