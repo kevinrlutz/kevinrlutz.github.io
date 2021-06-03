@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /idcard.html
 Disallow: /email_form.php
 Disallow: /uses.html
+Disallow: /blog.html
