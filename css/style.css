@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: 'JackInput';
-    src: url('./fonts/JackInput.woff2') format('woff2'), url('./fonts/JackInput.woff') format('woff');
+    font-family: 'MomcakeBold';
+    src: url('./fonts/MomcakeBold.woff2') format('woff2'), url('./fonts/MomcakeBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -40,6 +40,10 @@ h2 {
     margin: auto;
 }
 
+#desktop-nav {
+    margin-top: 1.9em;
+}
+
 #mobile-nav {
     display: none;
     margin: 0;
@@ -48,6 +52,7 @@ h2 {
 nav {
     text-align: right;
     margin-top: auto;
+    width: 100%;
 }
 
 nav a {
@@ -55,12 +60,15 @@ nav a {
     margin: auto;
     text-decoration: none;
     font-weight: bold;
-    margin-right: 3em;
+    padding-right: 1.1em;
+    padding-left: 1em;
     font-size: 1.7em;
+    border-right: #5fbdfc .1em solid;
 }
 
 #last-nav {
-    margin-right: 1em;
+    padding: none;
+    border: none;
 }
 
 #mobile-nav-arrow {
@@ -69,6 +77,8 @@ nav a {
 
 #mobile-nav a {
     margin-right: 0;
+    border: none;
+    padding: none;
 }
 
 header {
@@ -85,11 +95,12 @@ header p {
 
 header h1 {
     margin: 0;
-    margin-top: .1em;
-    margin-left: .5em;
+    margin-bottom: -.1em;
+    margin-top: -.1em;
+    margin-left: .25em;
     color: #5fbdfc;
-    font-size: 3.5em;
-    font-family: 'JackInput';
+    font-size: 5em;
+    font-family: 'MomcakeBold';
     font-weight: 100;
 }
 
@@ -182,7 +193,9 @@ header h1 {
 }
 
 #certifications img {
-    margin-bottom: 1em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
     width: 25%;
 }
 
@@ -196,7 +209,7 @@ header h1 {
 }
 
 #projects a {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 #projects a h3 {
@@ -283,12 +296,17 @@ footer {
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1265px) {
     header {
         display: block;
     }
     header p {
         margin-top: -1.1em;
+    }
+    header h1 {
+        font-size: 3.5em;
+        text-align: center;
+        margin: 0;
     }
     #desktop-nav {
         display: none;
