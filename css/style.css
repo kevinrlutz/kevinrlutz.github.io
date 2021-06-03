@@ -3,6 +3,7 @@
     src: url('./fonts/Amiko-Regular.eot?#iefix') format('embedded-opentype'), url('./fonts/Amiko-Regular.woff') format('woff'), url('./fonts/Amiko-Regular.ttf') format('truetype'), url('./fonts/Amiko-Regular.svg#Amiko-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
