@@ -224,7 +224,7 @@ header h1 {
 
 .socials-grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     grid-gap: 0.625em;
     padding: 0.625em;
     font-size: 1.2em;
@@ -242,7 +242,7 @@ header h1 {
 }
 
 .socials-grid div a img {
-    width: 3em;
+    width: 2.3em;
 }
 
 footer {
