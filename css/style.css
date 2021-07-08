@@ -159,9 +159,9 @@ header h1 {
 #skills-logos {
     pointer-events: none;
     display: inline-grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto;
     align-items: center;
-    column-gap: 3em;
+    column-gap: 1.5em;
     row-gap: 1em;
 }
 
@@ -187,8 +187,12 @@ header h1 {
 }
 
 #showMore {
-    border-radius: .1em;
-    font-size: 1.2em;
+    border-radius: 4px;
+    border: none;
+    background: linear-gradient(#89CEFC, #CCEAFF);
+    font-size: 1.25em;
+    padding: .33em;
+    color: #004C99;
 }
 
 #hidden-projects {
@@ -238,7 +242,7 @@ header h1 {
 }
 
 .socials-grid div a img {
-    width: 2.3em;
+    width: 3em;
 }
 
 footer {
