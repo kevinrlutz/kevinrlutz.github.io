@@ -333,30 +333,37 @@ footer {
     }
 }
 
-@media screen and (max-width: 560px) {
-    #certifications {
-        width: 100%;
-        column-gap: .25em;
-        row-gap: .15em;
+@media screen and (max-width: 720px) {
+    #skills-logos {
+        grid-template-columns: auto auto auto;
+        row-gap: 1em;
     }
-    .skill-imgs {
-        width: 3.9em;
-    }
-    .skill-imgs-smaller {
-        width: 2.9em;
+    #skills-logos div {
+        display: none;
     }
     .socials-grid {
         margin-left: 0;
         margin-right: 0;
     }
+}
+
+@media screen and (max-width: 650px) {
+    #certifications {
+        width: 100%;
+        column-gap: .25em;
+        row-gap: .15em;
+    }
     .left-align-mobile {
         text-align: left !important;
     }
-    #skills-logos {
-        display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .skill-imgs {
+        width: 4.5em;
     }
-    #skills-logos div {
-        display: none;
+    .skill-imgs-smaller {
+        width: 3.5em;
     }
 }
 
