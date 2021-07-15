@@ -442,10 +442,10 @@
 
       function showMore() {
         if ($("#showMore").html() == "Show More") {
-          $("#hidden-projects").css("display", "block");
+          $("#hidden-projects").slideDown();
           $("#showMore").html("Show Less");
         } else {
-          $("#hidden-projects").css("display", "none");
+          $("#hidden-projects").slideUp();
           $("#showMore").html("Show More");
         }
       }
