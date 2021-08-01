@@ -188,11 +188,14 @@ header h1 {
 }
 
 #showMore {
-    border-radius: 4px;
+    border-radius: 500px;
     border: none;
     background: linear-gradient(#89CEFC, #CCEAFF);
     font-size: 1.25em;
-    padding: .33em;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .33em;
+    padding-bottom: .33em;
     color: #004C99;
 }
 
