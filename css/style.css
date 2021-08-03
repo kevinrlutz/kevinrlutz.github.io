@@ -145,11 +145,11 @@ header h1 {
 }
 
 #splash-portrait {
-    margin-bottom: -.2em;
-    margin-right: 10%;
+    margin-right: 11%;
     pointer-events: none;
     float: right;
-    width: 23.05em;
+    width: 24em;
+    margin-top: 2.9em;
 }
 
 .default-wrapper {
@@ -254,6 +254,13 @@ footer {
     margin-right: auto;
     text-align: center;
     font-size: .8em;
+}
+
+
+@media screen and (max-width: 1600px) {
+    #splash-portrait {
+        margin-right: 6%;
+    }
 }
 
 /* MOBILE */
