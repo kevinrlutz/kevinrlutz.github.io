@@ -127,48 +127,46 @@
   <body>
     <header>
       <h1>Kevin Lutz</h1>
-      <nav id="desktop-nav">
+      <nav class="desktop-nav">
         <a href="index.html">ABOUT ME</a>&nbsp;
         <a href="#skills">MY SKILLS</a>&nbsp;
         <a href="#mywork">MY WORK</a>&nbsp;
-        <a id="last-nav" href="#contact">CONTACT ME</a>
+        <a class="last-nav" href="#contact">CONTACT ME</a>
       </nav>
 
-      <nav id="mobile-nav" class="centered">
+      <nav class="mobile-nav centered">
         <a href="index.html">ABOUT ME</a><br />
         <a href="#skills">MY SKILLS</a><br />
         <a href="#mywork">MY WORK</a><br />
         <a href="#contact">CONTACT ME</a>
       </nav>
-      <div id="mobile-nav-arrow" class="centered" onclick="mobileNavToggle()">
+      <div class="mobile-nav-arrow centered" onclick="mobileNavToggle()">
         ▼
       </div>
     </header>
     <main>
-      <div id="splash-container">
-        <div id="splash-content">
-          <div id="splash-text">
-            <img src="images/mobile-header-img.png" id="mobile-header-img" />
+      <div class="splash-container">
+        <div class="splash-content">
+          <div class="splash-text">
+            <img src="images/mobile-header-img.png" class="mobile-header-img" />
             <h1>Welcome!</h1>
             <br />
             <p>
-              My name is Kevin Lutz, welcome to my portfolio site. I am a
-              certified front-end web developer and I also develop some
-              software. I am mostly self-taught, having started teaching myself
-              how to code at around age 13. I am currently studying computer
-              science at Pace University in Westchester, New York. I am
-              proficient in Java, JavaScript (including jQuery), CSS, and HTML.
-              I have recently begun learning React, which I hope to master and
-              use in my future web applications. Along with attending college, I
-              have also earned 4 certifications (see "My Skills" section). My
-              ultimate goal is to one day work in software development for a
-              tech corporation. If you are in need of a web developer to either
-              create a website or improve upon your existing website, please
-              feel free to look through some of my past projects listed below
-              and contact me if you would like to discuss a potential project.
+              My name is Kevin Lutz, and I am a certified front-end web
+              developer. I am currently studying Computer Science at Pace
+              University in Westchester County, New York. I am proficient in
+              Java, Python, JavaScript (including jQuery and React), CSS, and
+              HTML. Alongside attending college, I have also earned 6
+              certifications from LinkedIn, HackerRank, and freeCodeCamp.org
+              (see "My Skills" section). My ultimate goal is to become a
+              software engineer or web developer for a tech corporation. If you
+              are in need of a web developer to either create a website or
+              improve upon your existing website, please feel free to browse
+              through some of my previous work listed below and contact me if
+              you would like to discuss a potential project.
             </p>
           </div>
-          <img id="splash-portrait" src="images/portrait-no-bg-min.png" />
+          <img class="splash-portrait" src="images/portrait-no-bg-min.png" />
         </div>
       </div>
       <br />
@@ -178,7 +176,7 @@
       <div class="default-wrapper">
         <div class="centered">
           <h2><strong>My Skills</strong></h2>
-          <div id="skills-logos">
+          <div class="skills-logos">
             <img
               src="images/java-logo.png"
               class="skill-imgs-smaller"
@@ -220,7 +218,7 @@
 
         <br />
 
-        <div class="centered" id="certifications">
+        <div class="centered certifications">
           <a
             href="https://www.freecodecamp.org/certification/kevinrlutz/responsive-web-design"
             target="_blank"
@@ -265,7 +263,7 @@
 
         <br />
 
-        <div id="projects">
+        <div class="projects">
           <a href="https://nicular.com" target="_blank">
             <h3>[HTML & CSS] Nicular Website</h3>
           </a>
@@ -308,7 +306,7 @@
             A simple tool used to convert USD <-> EUR made in Java using JavaFX.
           </p>
 
-          <div id="hidden-projects">
+          <div class="hidden-projects">
             <a href="https://codepen.io/kevinlutz/full/abJxmrm" target="_blank">
               <h3>[JavaScript (React)] React Calculator</h3>
             </a>
@@ -392,7 +390,7 @@
       <br />
 
       <div class="centered">
-        <div id="contact-div">
+        <div class="contact-div">
           <h2><strong>Contact Me</strong></h2>
           <p class="left-align-mobile">
             Looking to hire a developer? Feel free to reach out via
@@ -444,26 +442,26 @@
     </main>
     <script>
       $(function () {
-        $("#splash-content").fadeIn(1500);
+        $(".splash-content").fadeIn(1500);
       });
 
       function showMore() {
         if ($("#showMore").html() == "Show More") {
-          $("#hidden-projects").slideDown();
+          $(".hidden-projects").slideDown();
           $("#showMore").html("Show Less");
         } else {
-          $("#hidden-projects").slideUp();
+          $(".hidden-projects").slideUp();
           $("#showMore").html("Show More");
         }
       }
 
       function mobileNavToggle() {
-        if ($("#mobile-nav-arrow").html() == "▼") {
-          $("#mobile-nav").slideDown();
-          $("#mobile-nav-arrow").html("▲");
+        if ($(".mobile-nav-arrow").html() == "▼") {
+          $(".mobile-nav").slideDown();
+          $(".mobile-nav-arrow").html("▲");
         } else {
-          $("#mobile-nav").slideUp();
-          $("#mobile-nav-arrow").html("▼");
+          $(".mobile-nav").slideUp();
+          $(".mobile-nav-arrow").html("▼");
         }
       }
     </script>
