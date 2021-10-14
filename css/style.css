@@ -115,7 +115,7 @@ header h1 {
     width: 100%;
     text-align: right;
     margin: 0;
-    height: 32em;
+    height: 30em;
 }
 
 .splash-content {
@@ -151,6 +151,8 @@ header h1 {
     float: right;
     width: 24em;
     margin-top: 2.9em;
+    border-radius: 50%;
+    border: .25em solid white;
 }
 
 .default-wrapper {
