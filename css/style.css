@@ -215,10 +215,21 @@ header h1 {
     display: inline;
 }
 
+.projects a h3 img:nth-last-child(1) {
+    margin-right: .25em;
+}
+
 .projects p {
     margin-top: 0.5em;
     margin-bottom: 2em;
-    font-style: italic;
+}
+
+.project-icons {
+    width: 1.3rem;
+}
+
+.project-icons-smaller {
+    width: .9rem;
 }
 
 .contact-div {
