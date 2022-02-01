@@ -15,20 +15,7 @@
       name="keywords"
       content="Web Developer, Web Designer, Developer, Designer"
     />
-    <script
-      src="https://unpkg.com/react@17/umd/react.development.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
-      crossorigin
-    ></script>
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
     <title>Kevin Lutz - Web Developer</title>
     <link
       rel="apple-touch-icon-precomposed"
@@ -426,11 +413,12 @@
         </div>
       </div>
     </main>
-    <script>
-      $(function () {
-        $(".splash-content").fadeIn(1200);
-      });
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"
+    defer></script>
+    <script>
       function showMore() {
         if ($("#showMore").html() == "Show More") {
           $(".hidden-projects").slideDown();
@@ -451,6 +439,7 @@
         }
       }
     </script>
+
     <footer>
       <p>
         Created by
@@ -459,6 +448,4 @@
       <p style="margin-top: -1em">&copy; 2022</p>
     </footer>
   </body>
-
-  <footer></footer>
 </html>
