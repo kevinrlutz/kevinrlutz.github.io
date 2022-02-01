@@ -118,10 +118,6 @@ header h1 {
     height: 30em;
 }
 
-.splash-content {
-    display: none;
-}
-
 .splash-container * {
     margin: 0;
     padding: 0;
