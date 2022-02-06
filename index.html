@@ -113,7 +113,7 @@
 
   <body>
     <header>
-      <h1>Kevin Lutz</h1>
+      <h1>Kevin   Lutz</h1>
       <nav class="desktop-nav">
         <a href="index.html">ABOUT ME</a>&nbsp;
         <a href="#skills">MY SKILLS</a>&nbsp;
@@ -133,27 +133,20 @@
     </header>
     <main>
       <div class="splash-container">
-        <div class="splash-content">
           <div class="splash-text">
             <img src="images/header-img.png" class="mobile-header-img" />
             <h1>Welcome!</h1>
             <br />
             <p>
-              My name is Kevin Lutz, and I am a developer who is passionate about helping
-              businesses solve difficult problems with technology. I am proficient in
-              Java, Python, JavaScript (including jQuery and React), CSS, and
-              HTML. I will be graduating from Pace University in May with a BS in Computer Science. 
-              Alongside attending college, I have also earned 6
-              certifications through LinkedIn, HackerRank, and freeCodeCamp.org
-              (see "My Skills" section). 
-              I am currently seeking a full-time position in the software or web development field.
-              If you are looking for a web developer or software engineer, please feel free 
-              to browse through some of my previous work listed below and contact me if
-              you would like to discuss a potential project or employment opportunity.
+              I am an aspiring developer passionate about helping businesses create cutting-edge technology. 
+              I am proficient in Java, Python, JavaScript, CSS, and HTML. I will be graduating from Pace University 
+              with a BS in Computer Science. Alongside attending college, I have also earned six certifications 
+              through LinkedIn, HackerRank, and freeCodeCamp (<a href="#skills">My Skills</a>). I am currently seeking a full-time 
+              position in the software or web development industry. If you are looking for a web developer or software 
+              engineer, contact me to discuss potential projects or employment opportunities.
             </p>
           </div>
           <img class="splash-portrait" src="images/header-img.png" />
-        </div>
       </div>
       <br />
 
@@ -354,7 +347,7 @@
             </p>
           </div>
           <div class="centered">
-            <button id="showMore" onclick="showMore()">Show More</button>
+            <button id="showMore" onclick="showMore()">▼</button>
           </div>
         </div>
       </div>
@@ -420,12 +413,12 @@
     defer></script>
     <script>
       function showMore() {
-        if ($("#showMore").html() == "Show More") {
+        if ($("#showMore").html() == "▼") {
           $(".hidden-projects").slideDown();
-          $("#showMore").html("Show Less");
+          $("#showMore").html("▲");
         } else {
           $(".hidden-projects").slideUp();
-          $("#showMore").html("Show More");
+          $("#showMore").html("▼");
         }
       }
 
