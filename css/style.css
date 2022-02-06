@@ -113,7 +113,7 @@ header h1 {
 }
 
 .splash-container {
-    background: url('../images/borealis.jpg') fixed; 
+    background: url('../images/borealis.webp') fixed; 
     width: 100%;
     text-align: right;
     margin: 0;
