@@ -152,7 +152,7 @@ header h1 {
 .splash-text a:hover {
     text-decoration: none;
     background: #1EE6A3;
-    transition: .5s;
+    transition: .3s;
 }
 
 .splash-portrait {
@@ -233,6 +233,22 @@ header h1 {
 .projects p {
     margin-top: 0.5em;
     margin-bottom: 2em;
+}
+
+.projects p a {
+    font-size: 1em;
+    background: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #222;
+    text-decoration: underline;
+    text-decoration-color: #1EE6A3;
+    margin-bottom: 4em;
+}
+
+.projects p a:hover {
+    text-decoration: none;
+    background: #1EE6A3;
+    transition: .3s;
 }
 
 .project-icons {
