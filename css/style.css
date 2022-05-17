@@ -1,3 +1,12 @@
+/*
+COLORS:
+
+dark blue: #003E60
+green: #1EE6A3
+light blue: #5FA8D3
+special gradient blue: #529DF2
+
+*/
 @font-face {
     font-family: 'Amiko-Regular';
     src: url('./fonts/Amiko-Regular.eot?#iefix') format('embedded-opentype'), url('./fonts/Amiko-Regular.woff') format('woff'), url('./fonts/Amiko-Regular.ttf') format('truetype'), url('./fonts/Amiko-Regular.svg#Amiko-Regular') format('svg');
@@ -153,6 +162,7 @@ header h1 {
     text-decoration: none;
     background: #1EE6A3;
     transition: .3s;
+    color: #003E60
 }
 
 .splash-portrait {
@@ -339,7 +349,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1265px) {
+@media screen and (max-width: 1290px) {
     header {
         display: block;
     }
