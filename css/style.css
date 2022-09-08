@@ -468,7 +468,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 580px) {
     .skill-imgs {
         width: 4.2em;
     }
