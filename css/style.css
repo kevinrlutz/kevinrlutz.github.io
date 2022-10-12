@@ -189,9 +189,13 @@ header h1 {
     align-items: center;
     justify-content: center;
     column-gap: 2rem;
-    margin-bottom: 1.5rem;
+    margin: auto;
+    max-width: 50%;
 }
 
+.skills-logos div {
+    margin-bottom: 1rem;
+}
 
 .skill-imgs {
     width: 6.6em;
@@ -352,6 +356,8 @@ footer {
         padding-right: 1em;
         width: 90%;
         box-shadow: none;
+        text-shadow: 2px 2px #000;
+        background: none;
     }
 
     .splash-container {
@@ -368,6 +374,10 @@ footer {
         margin-bottom: 1.5em;
         margin-top: 1.1em;
         box-shadow: 0 0 10px black;
+    }
+
+    .skills-logos {
+        max-width: 65%;
     }
 }
 
@@ -431,6 +441,10 @@ footer {
     .certifications img {
         width: 35vw;
         margin: 0;
+    }
+
+    .skills-logos {
+        max-width: 85%;
     }
 }
 
