@@ -205,7 +205,7 @@ header h1 {
 .certifications {
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
+    width: 70%;
     justify-content: center;
     align-items: center;
 }
