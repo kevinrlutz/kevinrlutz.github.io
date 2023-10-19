@@ -141,16 +141,18 @@
           <h1>Welcome!</h1>
           <br />
           <p>
-            I am a software developer who is passionate about creating robust
-            business IT solutions using cutting-edge technology. I am proficient
-            in Java (Spring Boot), JavaScript/TypeScript (Node, Vue, Angular,
-            and React), HTML, and CSS. I am a graduate of Pace University's
-            Seidenberg School of CSIS with a Bachelor's degree in Computer
-            Science. Alongside the knowledge and experience gained within the
-            classroom, I have earned multiple certifications from Udemy,
-            HackerRank, LinkedIn, and freeCodeCamp.org. My goal is to
-            continuously improve as a developer and produce the best results
-            possible. Feel free to
+            I am a highly skilled and motivated software developer dedicated to
+            delivering robust IT solutions using cutting-edge technology. My
+            expertise includes building REST APIs with Spring Boot and Node.js,
+            proficiency in Java (with a specialization in Spring Boot) and
+            JavaScript (including Node.js, Vue, React, Angular, and TypeScript),
+            as well as web technologies like CSS and HTML. I'm a cum laude
+            graduate from Pace University's Seidenberg School of Computer
+            Science with a Bachelor's degree in Computer Science. Complementing
+            my formal education, I've earned certifications from platforms like
+            Udemy, HackerRank, LinkedIn, and freeCodeCamp.org. My unwavering
+            commitment is to continuously enhance my development skills and
+            deliver exceptional results. Feel free to
             <a href="#contact">contact me</a> to discuss potential projects.
           </p>
         </div>
@@ -702,32 +704,32 @@
     ></script>
     <script>
       function showMore() {
-        if ($("#showMore").html() == "▼") {
-          $(".hidden-projects").slideDown();
-          $("#showMore").html("▲");
+        if ($('#showMore').html() == '▼') {
+          $('.hidden-projects').slideDown()
+          $('#showMore').html('▲')
         } else {
-          $(".hidden-projects").slideUp();
-          $("#showMore").html("▼");
+          $('.hidden-projects').slideUp()
+          $('#showMore').html('▼')
         }
       }
 
       function mobileNavToggle() {
-        if ($(".mobile-nav-arrow").html() == "▼") {
-          $(".mobile-nav").slideDown();
-          $(".mobile-nav-arrow").html("▲");
+        if ($('.mobile-nav-arrow').html() == '▼') {
+          $('.mobile-nav').slideDown()
+          $('.mobile-nav-arrow').html('▲')
         } else {
-          $(".mobile-nav").slideUp();
-          $(".mobile-nav-arrow").html("▼");
+          $('.mobile-nav').slideUp()
+          $('.mobile-nav-arrow').html('▼')
         }
       }
 
       function moreCerts() {
-        if ($("#moreCerts").html() == "View More") {
-          $(".hidden-certs").toggle(true);
-          $("#moreCerts").html("View Less");
+        if ($('#moreCerts').html() == 'View More') {
+          $('.hidden-certs').toggle(true)
+          $('#moreCerts').html('View Less')
         } else {
-          $(".hidden-certs").toggle(false);
-          $("#moreCerts").html("View More");
+          $('.hidden-certs').toggle(false)
+          $('#moreCerts').html('View More')
         }
       }
     </script>
