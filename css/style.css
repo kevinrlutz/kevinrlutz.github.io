@@ -2,6 +2,7 @@
 COLORS:
 
 dark blue: #003E60
+medium blue: #1B4965
 green: #1EE6A3
 light blue: #5FA8D3
 special gradient blue: #529DF2
@@ -12,6 +13,7 @@ special gradient blue: #529DF2
     --header-color: #003E60;
     --body-color: #222;
     --bg-color: #fff;
+    --opposite-header-color: #1EE6A3;
 }
 
 @font-face {
@@ -300,15 +302,13 @@ header h1 {
     font-size: 1em;
     background: none;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--link-color);
-    text-decoration: underline;
-    text-decoration-color: #1EE6A3;
+    -webkit-text-fill-color: var(--header-color);
     margin-bottom: 4em;
 }
 
 .projects p a:hover {
     text-decoration: none;
-    background: #1EE6A3;
+    background: var(--opposite-header-color);
     transition: .3s;
 }
 
