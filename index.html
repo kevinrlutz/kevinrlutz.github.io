@@ -128,6 +128,7 @@
         <a href="#contact">CONTACT ME</a>
       </nav>
       <div class="mobile-nav-arrow centered" onclick="mobileNavToggle()">▼</div>
+      <button class="theme-toggle" onclick="themeToggle()">Toggle Theme</button>
     </header>
     <main>
       <div class="splash-container">
@@ -700,9 +701,34 @@
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
-      defer
     ></script>
     <script>
+      let darkMode = false
+      if (
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      ) {
+        console.log('dark pref detected')
+        themeToggle()
+      }
+      function themeToggle() {
+        if (darkMode) {
+          console.log('its darkmode, toggling to light')
+          $(':root').css('--link-color', '#003E60')
+          $(':root').css('--header-color', '#003E60')
+          $(':root').css('--body-color', '#222')
+          $(':root').css('--bg-color', '#fff')
+          darkMode = false
+        } else {
+          console.log('its lightmode, toggling to dark')
+          $(':root').css('--link-color', '#1EE6A3')
+          $(':root').css('--header-color', '#1EE6A3')
+          $(':root').css('--body-color', '#f9f9f9')
+          $(':root').css('--bg-color', '#222')
+          darkMode = true
+        }
+      }
+
       function showMore() {
         if ($('#showMore').html() == '▼') {
           $('.hidden-projects').slideDown()
