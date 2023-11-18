@@ -716,6 +716,7 @@
           console.log('its darkmode, toggling to light')
           $(':root').css('--link-color', '#003E60')
           $(':root').css('--header-color', '#003E60')
+          $(':root').css('--opposite-header-color', '#1EE6A3')
           $(':root').css('--body-color', '#222')
           $(':root').css('--bg-color', '#fff')
           darkMode = false
@@ -723,6 +724,7 @@
           console.log('its lightmode, toggling to dark')
           $(':root').css('--link-color', '#1EE6A3')
           $(':root').css('--header-color', '#1EE6A3')
+          $(':root').css('--opposite-header-color', '#003E60')
           $(':root').css('--body-color', '#f9f9f9')
           $(':root').css('--bg-color', '#222')
           darkMode = true
@@ -765,7 +767,7 @@
         Created by
         <strong><a href="http://twitter.com/kevinrlutz">Kevin Lutz</a></strong>
       </p>
-      <p style="margin-top: -1em">&copy; 2022</p>
+      <p style="margin-top: -1em">&copy; 2023</p>
     </footer>
   </body>
 </html>
