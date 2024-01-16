@@ -115,17 +115,16 @@
     <header>
       <h1>Kevin Lutz</h1>
       <nav class="desktop-nav">
-        <a href="index.html">ABOUT ME</a>&nbsp;
-        <a href="#skills">MY SKILLS</a>&nbsp;
-        <a href="#mywork">MY WORK</a>&nbsp;
-        <a class="last-nav" href="#contact">CONTACT ME</a>
+        <a href="index.html">ABOUT</a>&nbsp; <a href="#skills">SKILLS</a>&nbsp;
+        <a href="#projects">PROJECTS</a>&nbsp;
+        <a class="last-nav" href="#contact">CONTACT</a>
       </nav>
 
       <nav class="mobile-nav centered">
-        <a href="index.html">ABOUT ME</a><br />
-        <a href="#skills">MY SKILLS</a><br />
-        <a href="#mywork">MY WORK</a><br />
-        <a href="#contact">CONTACT ME</a>
+        <a href="index.html">ABOUT</a><br />
+        <a href="#skills">SKILLS</a><br />
+        <a href="#projects">PROJECTS</a><br />
+        <a href="#contact">CONTACT</a>
       </nav>
       <div class="mobile-nav-arrow centered" onclick="mobileNavToggle()">▼</div>
       <button class="theme-toggle" onclick="themeToggle()">Toggle Theme</button>
@@ -151,9 +150,9 @@
             graduate from Pace University's Seidenberg School of Computer
             Science with a Bachelor's degree in Computer Science. Complementing
             my formal education, I've earned certifications from platforms like
-            Udemy, HackerRank, LinkedIn, and freeCodeCamp.org. My unwavering
-            commitment is to continuously enhance my development skills and
-            deliver exceptional results. Feel free to
+            Udemy, HackerRank, LinkedIn, and freeCodeCamp.org. My goal is to
+            continuously enhance my development skills and deliver exceptional
+            results. Feel free to
             <a href="#contact">contact me</a> to discuss potential projects.
           </p>
         </div>
@@ -352,11 +351,11 @@
         <button id="moreCerts" onclick="moreCerts()">View More</button>
       </div>
 
-      <a id="mywork"></a>
+      <a id="projects"></a>
 
       <div class="default-wrapper">
         <div class="centered">
-          <h2><strong>My Work</strong></h2>
+          <h2><strong>Projects</strong></h2>
           <p class="left-align-mobile">
             Below you can find some examples of my work. Most are finished
             projects, but some are still works in progress.
@@ -685,12 +684,6 @@
                 ><img src="images/hackerrank-logo.webp" alt="HackerRank"
               /></a>
             </div>
-            <div>
-              <a
-                href="https://stackoverflow.com/users/9654672/kevin-lutz?tab=profile"
-                ><img src="images/so-logo.webp" alt="Stack Overflow"
-              /></a>
-            </div>
             <a id="skills"></a>
           </div>
         </div>
@@ -708,12 +701,10 @@
         window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches
       ) {
-        console.log('dark pref detected')
         themeToggle()
       }
       function themeToggle() {
         if (darkMode) {
-          console.log('its darkmode, toggling to light')
           $(':root').css('--link-color', '#003E60')
           $(':root').css('--header-color', '#003E60')
           $(':root').css('--opposite-header-color', '#1EE6A3')
@@ -721,7 +712,6 @@
           $(':root').css('--bg-color', '#fff')
           darkMode = false
         } else {
-          console.log('its lightmode, toggling to dark')
           $(':root').css('--link-color', '#1EE6A3')
           $(':root').css('--header-color', '#1EE6A3')
           $(':root').css('--opposite-header-color', '#003E60')
@@ -767,7 +757,7 @@
         Created by
         <strong><a href="http://twitter.com/kevinrlutz">Kevin Lutz</a></strong>
       </p>
-      <p style="margin-top: -1em">&copy; 2023</p>
+      <p style="margin-top: -1em">&copy; 2024</p>
     </footer>
   </body>
 </html>
