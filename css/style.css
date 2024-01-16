@@ -328,7 +328,7 @@ header h1 {
 
 .socials-grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     grid-gap: 0.625em;
     padding: 0.625em;
     font-size: 1.2em;
@@ -406,7 +406,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1280px) {
     header {
         display: block;
     }
